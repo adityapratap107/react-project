@@ -1,3 +1,33 @@
-.expense-item {
-    background-color: blue;
+*{
+    margin:0;
+    padding: 0
 }
+.expense-item {
+    background-color: darkgrey;
+    height: 100px;
+    border-radius: 12px;
+    margin: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+.expense-description {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 48px;
+    justify-content: space-between;
+}
+.expense-price {
+    background-color: firebrick;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid white;
+    color: white;
+    margin-right: 48px;
+
+}
+
+
+
+
