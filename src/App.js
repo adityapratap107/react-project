@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/ExpenseItem/ExpenseItem";
 
 function App() {
   const expenses = [
@@ -14,10 +14,10 @@ function App() {
       <h2>Let's Start!</h2>
       
       {/* MULTIPLE PROPS WAY */}
-      {/* <ExpenseItem title={expenses[0].title} amount={expenses[0].price} date={expenses[0].date} />
+      <ExpenseItem title={expenses[0].title} amount={expenses[0].price} date={expenses[0].date} />
       <ExpenseItem title={expenses[1].title} amount={expenses[1].price} date={expenses[1].date} />
       <ExpenseItem title={expenses[2].title} amount={expenses[2].price} date={expenses[2].date} />
-      <ExpenseItem title={expenses[3].title} amount={expenses[3].price} date={expenses[3].date} /> */}
+      <ExpenseItem title={expenses[3].title} amount={expenses[3].price} date={expenses[3].date} />
 
       {/* SINGLE PROP WAY */}
       {/* <ExpenseItem expense={expenses[0]} />
@@ -26,13 +26,17 @@ function App() {
       <ExpenseItem expense={expenses[3]} /> */}
 
       {/* OBJECT DESTRUCTURING WAY */}
-      <ExpenseItem title={expenses[0].title} amount={expenses[0].price} date={expenses[0].date} />
+      {/* <ExpenseItem title={expenses[0].title} amount={expenses[0].price} date={expenses[0].date} />
       <ExpenseItem title={expenses[1].title} amount={expenses[1].price} date={expenses[1].date} />
       <ExpenseItem title={expenses[2].title} amount={expenses[2].price} date={expenses[2].date} />
-      <ExpenseItem title={expenses[3].title} amount={expenses[3].price} date={expenses[3].date} />
+      <ExpenseItem title={expenses[3].title} amount={expenses[3].price} date={expenses[3].date} /> */}
 
     </div>
   );
 }
 
 export default App;
+
+
+
+
