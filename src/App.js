@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem/ExpenseItem";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -12,27 +12,12 @@ function App() {
   return (
     <div className="App">
       <h2>Let's Start!</h2>
-      
-      {/* MULTIPLE PROPS WAY */}
-      <ExpenseItem title={expenses[0].title} amount={expenses[0].price} date={expenses[0].date} />
-      <ExpenseItem title={expenses[1].title} amount={expenses[1].price} date={expenses[1].date} />
-      <ExpenseItem title={expenses[2].title} amount={expenses[2].price} date={expenses[2].date} />
-      <ExpenseItem title={expenses[3].title} amount={expenses[3].price} date={expenses[3].date} />
-
-      {/* SINGLE PROP WAY */}
-      {/* <ExpenseItem expense={expenses[0]} />
-      <ExpenseItem expense={expenses[1]} />
-      <ExpenseItem expense={expenses[2]} />
-      <ExpenseItem expense={expenses[3]} /> */}
-
-      {/* OBJECT DESTRUCTURING WAY */}
-      {/* <ExpenseItem title={expenses[0].title} amount={expenses[0].price} date={expenses[0].date} />
-      <ExpenseItem title={expenses[1].title} amount={expenses[1].price} date={expenses[1].date} />
-      <ExpenseItem title={expenses[2].title} amount={expenses[2].price} date={expenses[2].date} />
-      <ExpenseItem title={expenses[3].title} amount={expenses[3].price} date={expenses[3].date} /> */}
-
+      <Expenses items={expenses}/>
     </div>
   );
+
+  // return React.createElement('div', {className: "App"}, React.createElement('h2', {}, React.createElement(Expenses, {items:expenses})))
+  // return React.createElement('div',{className: "App"}, React.createElement('h2', {}, "Let's Start!"), React.createElement(Expenses, {items:expenses}))
 }
 
 export default App;
