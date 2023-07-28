@@ -11,13 +11,13 @@ function ExpenseItem(props) {
     // const year = props.date.getFullYear();
 
   return (
-    <div className="expense-item">
-        <div className=''>{props.date.toISOString()}</div>
-        <div className='expense-description'>
-            <h2>{props.title}</h2>
-            <div className='expense-price'>${props.amount}</div>
-        </div>
-    </div>
+      // <div className="expense-item">
+      //     <div className=''>{props.date.toISOString()}</div>
+      //     <div className='expense-description'>
+      //         <h2>{props.title}</h2>
+      //         <div className='expense-price'>${props.amount}</div>
+      //     </div>
+      // </div>
 
     // Alternative way
     // <div className="expense-item">
@@ -60,13 +60,13 @@ function ExpenseItem(props) {
   // </div>
 
     // using card component
-  // <Card className="expense-item">
-  //   <ExpenseDate date={props.date}/>
-  //   <div className="expense-description">
-  //     <h2>{props.title}</h2>
-  //     <div className="expense-price">${props.amount}</div>
-  //   </div>
-  // </Card>
+  <Card className="expense-item">
+    <ExpenseDate date={props.date}/>
+    <div className="expense-description">
+      <h2>{props.title}</h2>
+      <div className="expense-price">${props.amount}</div>
+    </div>
+  </Card>
   );
 }
 
