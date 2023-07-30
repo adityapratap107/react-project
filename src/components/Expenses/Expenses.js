@@ -26,4 +26,4 @@ const Expenses = ({items}) => {
   )
 }
 
-export default Expenses
+export default Expenses;

@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Assignment1 from './Assignment1';
+import Assignment3 from './Assignment3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Assignment1 />
+    <App />
+    {/* <Assignment3 /> */}
   </React.StrictMode>
 );
 

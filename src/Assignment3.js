@@ -1,12 +1,12 @@
 import React from "react";
-import "./Assignment1.css";
+// import "./Assignment3.css";
 import componentsImage from './assets/images/assignment1/components.png'
 import stateImage from './assets/images/assignment1/state.png'
 import eventsImage from './assets/images/assignment1/events.png'
-import Header from "./componentsAssignment1/header";
-import Concept from "./componentsAssignment1/concept";
+import Header from "./componentsAssignment3/header";
+import Concept from "./componentsAssignment3/concept";
 
-function Assignment1() {
+function Assignment3() {
   const concepts = [
     {
       title: 'Components',
@@ -37,19 +37,19 @@ function Assignment1() {
           <h2>{concepts[0].title}</h2>
           <p>{concepts[0].description}</p>
         </li> */}
-        <Concept image={concepts[0].image} title={concepts[0].title} description={concepts[0].description} />
         {/* <li className="concept">
           <img src={concepts[1].image} className="boxIcon" alt={concepts[1].title} />
           <h2>{concepts[1].title}</h2>
           <p>{concepts[1].description}</p>
         </li> */}
-        <Concept image={concepts[1].image} title={concepts[1].title} description={concepts[1].description} />
 
         {/* <li className="concept">
           <img src={concepts[2].image} className="boxIcon" alt={concepts[2].title} />
           <h2>{concepts[2].title}</h2>
           <p>{concepts[2].description}</p>
         </li> */}
+        <Concept image={concepts[0].image} title={concepts[0].title} description={concepts[0].description} />
+        <Concept image={concepts[1].image} title={concepts[1].title} description={concepts[1].description} />
         <Concept image={concepts[2].image} title={concepts[2].title} description={concepts[2].description} />
 
       </ul>
@@ -58,7 +58,7 @@ function Assignment1() {
 
 }
 
-export default Assignment1;
+export default Assignment3;
 
 
 
