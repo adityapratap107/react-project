@@ -10,10 +10,14 @@ function App() {
     {id: 3, title: "Bike", price: 300.23, date: new Date(2023, 6, 12)},
     {id: 4, title: "Car", price: 2000.23, date: new Date(2023, 5, 7)},
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log('expense in app js', expense)
+  }
+
   return (
     <div className="App">
-      <h2>Let's Start!</h2>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
