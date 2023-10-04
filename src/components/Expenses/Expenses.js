@@ -3,6 +3,7 @@ import ExpenseItem from '../ExpenseItem/ExpenseItem'
 import ExpensesFilter from '../ExpensesFilter';
 
 const Expenses = ({items}) => {
+  console.log('ITEMS', items);
   // console.log('Expenses Items', props.items)
 
   const [filteredYear, setFilteredYear] = useState('2023');
