@@ -1,7 +1,7 @@
+import React, { useState } from "react";
 import "./ExpenseItem.css";
 import ExpenseDate from "../ExpenseDate/ExpenseDate";
 import Card from "../card/Card";
-import React, { useState } from "react";
 
 // function ExpenseItem({title, date, amount}) {
 function ExpenseItem(props) {
@@ -76,14 +76,27 @@ function ExpenseItem(props) {
   // </div>
 
     // using card component
-  <Card className="expense-item">
-    <ExpenseDate date={props.date}/>
-    <div className="expense-description">
-      <h2>{title}</h2>
-      <div className="expense-price">${props.amount}</div>
-    </div>
-    <button onClick={clickHandler}>Change Title</button>
-  </Card>
+  // <Card className="expense-item">
+  //   <ExpenseDate date={props.date}/>
+  //   <div className="expense-description">
+  //     <h2>{title}</h2>
+  //     <div className="expense-price">${props.amount}</div>
+  //   </div>
+  //   <button onClick={clickHandler}>Change Title</button>
+  // </Card>
+
+  <li>
+    <Card className='expense-item'>
+        <ExpenseDate date={props.date} />
+        <div className='expense-item__description'>
+          <h2>{title}</h2>
+          <div className='expense-item__price'>${props.amount}</div>
+        </div>
+      <button onClick={clickHandler}>Change Title</button>
+
+      </Card>
+  </li>
+
   );
 }
 
