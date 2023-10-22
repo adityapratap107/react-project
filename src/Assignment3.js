@@ -1,5 +1,5 @@
 import React from "react";
-import "./Assignment3.css";
+// import "./Assignment3.css";
 import componentsImage from './assets/images/assignment1/components.png'
 import stateImage from './assets/images/assignment1/state.png'
 import eventsImage from './assets/images/assignment1/events.png'
@@ -31,7 +31,7 @@ function Assignment3() {
   return (
     <div className="Assignment1">
       <Header/>
-      <ul id="concepts">
+      <ul id="concepts">  
         {/* <li className="concept">
           <img src={concepts[0].image} className="boxIcon" alt={concepts[0].title} />
           <h2>{concepts[0].title}</h2>

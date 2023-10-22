@@ -25,10 +25,11 @@ const Expenses = ({items}) => {
     } 
 
   const filterChangeHandler = selectedYear => {
+    console.log(selectedYear)
     setFilteredYear(selectedYear);
     // if(selectedYear === '2021') {
     //   setFilterInfoText('2022, 2023 & 2024')
-    // } else if (selectedYear === '2022') {
+    // } else  if (selectedYear === '2022') {
     //   setFilterInfoText('2021, 2023 & 2024')
     // } else if (selectedYear === '2023') {
     //   setFilterInfoText('2021, 2022 & 2024')
@@ -41,14 +42,14 @@ const Expenses = ({items}) => {
     return expense.date.getFullYear().toString() === filteredYear
   })
 
-  let expensesContent = <p className='date-description'>No Expenses found.</p>;
-  if(filteredExpenses.length > 0) {
-    expensesContent = filteredExpenses?.map((item) => {
-      return (
-          <ExpenseItem key={item.id} title={item.title} amount={item.amount} date={item.date} />
-      )
-    })
-  }
+  // let expensesContent = <p className='date-description'>No Expenses found.</p>;
+  // if(filteredExpenses.length > 0) {
+  //   expensesContent = filteredExpenses?.map((item) => {
+  //     return (
+  //         <ExpenseItem key={item.id} title={item.title} amount={item.amount} date={item.date} />
+  //     );
+  //   }) 
+  // }
 
   return (
     <div>

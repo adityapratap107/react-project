@@ -1,8 +1,9 @@
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import "./index.css";
-const NewExpense = (props) => {
+const  NewExpense = (props) => {
     const saveExpenseDataHandler = (enteredExpenseData) => {
+        console.log('hiidata', enteredExpenseData)
         const expenseData = {
             ...enteredExpenseData,
             id: Math.random().toString()
@@ -17,4 +18,4 @@ const NewExpense = (props) => {
     );
 };
 
-export default NewExpense;
+export default NewExpense;  

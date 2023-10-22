@@ -7,11 +7,11 @@ const ExpenseForm = (props) => {
     const [enteredDate, setEnteredDate] = useState();
 
     // Alternate way to create only single state
-    // const [userInput, setUserInput] = useState({
-    //     enteredTitle: '',
-    //     enteredAmount: '',
-    //     enteredDate: '',
-    // })
+    const [userInput, setUserInput] = useState({
+        enteredTitle: '',
+        enteredAmount: '',
+        enteredDate: '',
+    });
 
     const onTitleChange = (event) => {
         console.log("title changed", event.target.value)
@@ -67,8 +67,8 @@ const ExpenseForm = (props) => {
             date: new Date(enteredDate)    // parse date string and converted into date object
         }
 
-        console.log(expenseData);
-        props.onSaveExpenseData(expenseData)
+        console.log('expenseData', expenseData);
+        props.onSaveExpenseData(expenseData);
 
         setEnteredTitle("")
         setEnteredAmount("")

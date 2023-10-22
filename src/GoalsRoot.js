@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import CourseGoalList from './componentsProject2/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './componentsProject2/CourseGoals/CourseInput/CourseInput';
-import './Root.css';
+import './GoalsRoot.css';
 
-const Root = () => {
+const GoalsRoot = () => {
   const [courseGoals, setCourseGoals] = useState([
     { text: 'Do all exercises!', id: 'g1' },
     { text: 'Finish the course!', id: 'g2' }
@@ -54,4 +54,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default GoalsRoot;
