@@ -5,13 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Assignment3 from './Assignment3';
 import GoalsRoot from './GoalsRoot';
+import RefPortals from './RefPortals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <Assignment3 /> */}
     {/* <GoalsRoot /> */}
+    <RefPortals />
   </React.StrictMode>
 );
 
@@ -19,3 +21,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
